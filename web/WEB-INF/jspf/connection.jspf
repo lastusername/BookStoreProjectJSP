@@ -1,0 +1,9 @@
+<%@page import="java.sql.*,org.apache.derby.jdbc.*" %>
+<%
+   String dbURI = "jdbc:derby://localhost:1527/bookstore";
+    DriverManager.registerDriver(new ClientDriver());
+    Connection con = DriverManager.getConnection(dbURI);
+    Statement stmt = con.createStatement(); 
+    //this variable is used in head.jspf to prevent conflicts and errors with any other file using stmt.
+    Statement stmtAlt = con.createStatement();
+%>

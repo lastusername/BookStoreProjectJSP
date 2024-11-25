@@ -1,0 +1,248 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: red;
+    /*background-color: #d0e2eb;*/
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #456289;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;  /* Set both width and height to be equal for a perfect circle */
+    background-color: #a3c3d8; /* Placeholder for logo */
+    border-radius: 50%;  /* This will make the image a circle */
+    object-fit: cover;  /* Ensures the image covers the circular space without distorting */
+    cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.logo img:hover {
+    transform: scale(1.1);  /* Slightly increase the size of the logo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Add a shadow to emphasize hover */
+    cursor: pointer;  /* Change the cursor to a pointer to indicate it's clickable */
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a3c3d8;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #80a4c0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #456289;
+}
+
+/* Main Content */
+div#main {
+    padding: 20px;
+}
+
+.book-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #80a4c0 #d0e2eb; /* Custom scrollbar */
+}
+
+/* Scrollbar styling for Webkit browsers (Chrome, Safari, Edge) */
+.book-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.book-row::-webkit-scrollbar-track {
+    background: #d0e2eb;
+}
+
+.book-row::-webkit-scrollbar-thumb {
+    background-color: #80a4c0;
+    border-radius: 10px;
+}
+
+.book-card {
+    background-color: #a3c3d8;
+    width: 200px;  /* Fixed width */
+    height: 300px; /* Increased height for a taller card */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+    cursor: pointer;  /* Make it clickable */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  /* Ensures space between image and description */
+}
+
+.book-card img {
+    width: 100%;
+    height: 200px;  /* Fixed image height */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between image and description */
+}
+
+.book-description {
+    font-size: 14px;
+    color: #1d1b28;
+}
+
+/* Hover Effect on .book-card */
+.book-card:hover {
+    transform: scale(1.05);  /* Slightly enlarge the card on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Add shadow for depth */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main Content */
+div#main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1d1b28;
+}
+
+p {
+    margin-top: 10px;
+    color: #555;
+}
+
+button {
+    background-color: #456289;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #80a4c0;
+}
+
+/* Course Selector Section */
+.course-selector {
+    margin-top: 20px;
+}
+
+.bookstore {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #a3c3d8;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Course Form */
+.course-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.course-row select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a3c3d8;
+    background-color: #d0e2eb;
+}
+
+.clear-btn {
+    background-color: #80a4c0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color: #456289;
+}
+
+/* Buttons */
+.add-course {
+    background-color: #456289;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.add-course:hover {
+    background-color: #80a4c0;
+}
+
+.retrieve {
+    background-color: #456289;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.retrieve:hover {
+    background-color: #80a4c0;
+}
+
+/* Footer */
+footer {
+    background-color: #456289;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}

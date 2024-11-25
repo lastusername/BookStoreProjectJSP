@@ -1,0 +1,151 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Nov 8, 2024, 2:21:51 PM
+    Author     : 3012188
+*/
+
+/*General*/
+h1, h2, h3, h4, h5, h6 {
+    border-bottom: 2px solid #456289;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin-bottom: 6%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #456289;
+}
+
+/*Left Column: Cover & Details*/
+.book-cover {
+    background-color: #a3c3d8;
+    width: auto;  /* Increased width */
+    height: auto; /* Increased height */
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #456289;
+}
+
+.book-cover img {
+    width: 90%;
+    height: auto;  /* Increased image size */
+    object-fit: cover;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.book-details {
+    background-color: #ffffff;
+    width: auto;
+    height: auto; 
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #456289;
+}
+
+.book-details p {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: auto;
+    text-align: left;
+}
+/*Middle Column: Title, Author & Description*/
+
+.column-middle div.description  {
+    background-color: #ffffff;
+    height: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #456289;
+    font-size: 12px
+}
+
+
+/*Right Column: Pricing and Add to Cart*/
+
+.column-right{
+    background-color: #456289;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-bottom: 2px solid #456289;
+    border-radius: 5px;
+    padding: 2%;
+    
+}
+
+.column-right > div{
+    margin: auto;
+    height: auto;
+    background-color: #d0e2eb;
+    border-radius: 5px;
+}
+
+.column-right *{
+    margin: auto;
+    text-align: center;
+}
+
+.column-right h1{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+    width: 95%;
+}
+
+.column-right .details{
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #456289;
+    width: 95%;
+}
+
+.column-right .purchase-options{
+    margin-top: 10%;
+}
+
+.column-right .purchase-options button{
+    background-color: #ffff60;
+    border: #456289 solid 2px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 5px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.column-right .purchase-options button#add-to-cart{
+    background-color: #ffff60;
+    width: 95%;
+}
+.column-right .purchase-options button#buy-now{
+    background-color: #ff9e00;
+    width: 95%;
+    margin-bottom: 15%;
+}
+
+/* Footer */
+footer {
+    background-color: #456289;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: 12px;
+}
